@@ -335,8 +335,8 @@ SNAKE.Snake = SNAKE.Snake || (function() {
                     alert('Congratulations! You have beaten your previous high score, which was ' + highScore + '.');
                         localStorage.setItem('jsSnakeHighScore', me.snakeLength);
                 }
-                if (me.snakeLength > 20) {
-                  alert('Congratulations! You have unlocked the next step')
+                if (me.snakeLength > 1200) {
+                  alert('Congratulations! You have unlocked the next step! Please find @OlusegunObasan7 to proceed.')
                 }
             }
             recordScore();
