@@ -331,11 +331,11 @@ SNAKE.Snake = SNAKE.Snake || (function() {
             function recordScore () {
                 var highScore = localStorage.jsSnakeHighScore;
                 if (highScore == undefined) localStorage.setItem('jsSnakeHighScore', me.snakeLength);
-                if ((me.snakeLength > highScore) && (me.snakeLength < 100)) {
+                if ((me.snakeLength > highScore) && (me.snakeLength < 1000)) {
                     alert('Congratulations! You have beaten your previous high score, which was ' + highScore + '. Not enough to save Abache and claim the 12.000.000$ though!');
                         localStorage.setItem('jsSnakeHighScore', me.snakeLength);
                 }
-                else if (me.snakeLength >= 100) {
+                else if (me.snakeLength >= 1000) {
                   alert('Congratulations! You have unlocked the next step! Please find @OlusegunObasan7 to proceed.')
                 }
             }
